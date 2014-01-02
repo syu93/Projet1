@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Automate</title>
+	<script src="js/EaselJS-release_v0.7.0/lib/easeljs-0.7.0.min.js"></script>
+	<script src="js/TweenJS-release_v0.5.0/lib/tweenjs-0.5.0.min.js"></script>
+	
+	<script>
+		function init() {
+			var stage = new createjs.Stage("demoCanvas");
+			w = stage.canvas.width;
+			h = stage.canvas.height;
+
+			var bandeB = new createjs.Shape();
+			bandeB.graphics.beginFill("#ccc").drawRoundRect(1,h*0.68,w/8, h*0.03, 2);
+			bandeB.graphics.endFill();
+
+			var bandeH = new createjs.Shape();
+			bandeH.graphics.beginFill("#ccc000").drawRoundRect(1,h*0.48,w/8, h*0.03, 2);
+			bandeH.graphics.endFill();
+			
+			var gypesL = new createjs.Shape();
+			gypesL.graphics.beginFill("#727272").drawRoundRect(1,h*0.51,w/8, h/5.9, 2);
+			gypesL.graphics.endFill();
+			/*************************************************************************/
+			var ball0 = new createjs.Shape();
+            ball0.graphics.setStrokeStyle(5, 'round', 'round');
+            ball0.graphics.beginStroke(('#000000'));
+            ball0.graphics.beginFill("#ccc").drawCircle(0,0,20);
+            ball0.graphics.endStroke();
+            ball0.graphics.endFill();
+            ball0.graphics.setStrokeStyle(1, 'round', 'round');
+            ball0.graphics.beginStroke(('#000000'));
+            ball0.graphics.moveTo(20,0);
+            ball0.graphics.lineTo(-20,0);
+            ball0.graphics.moveTo(0,20);
+            ball0.graphics.lineTo(0,-20);
+            ball0.graphics.endStroke();			
+            ball0.x = w+300;
+            ball0.y = 250;
+		// Dessin de Roue truck 1	
+			var ball1 = new createjs.Shape();
+            ball1.graphics.setStrokeStyle(5, 'round', 'round');
+            ball1.graphics.beginStroke(('#000000'));
+            ball1.graphics.beginFill("#ccc").drawCircle(0,0,20);
+            ball1.graphics.endStroke();
+            ball1.graphics.endFill();
+            ball1.graphics.setStrokeStyle(1, 'round', 'round');
+            ball1.graphics.beginStroke(('#000000'));
+            ball1.graphics.moveTo(20,0);
+            ball1.graphics.lineTo(-20,0);
+            ball1.graphics.moveTo(0,20);
+            ball1.graphics.lineTo(0,-20);
+            ball1.graphics.endStroke();			
+            ball1.x = w+25;
+            ball1.y = 250;
+		// Dessin de Roue truck 2
+			var ball2 = new createjs.Shape();
+            ball2.graphics.setStrokeStyle(5, 'round', 'round');
+            ball2.graphics.beginStroke(('#000000'));
+            ball2.graphics.beginFill("#ccc").drawCircle(0,0,20);
+            ball2.graphics.endStroke();
+            ball2.graphics.endFill();			
+            ball2.graphics.setStrokeStyle(1, 'round', 'round');
+            ball2.graphics.beginStroke(('#000000'));
+            ball2.graphics.moveTo(20,0);
+            ball2.graphics.lineTo(-20,0);
+            ball2.graphics.moveTo(0,20);
+            ball2.graphics.lineTo(0,-20);
+            ball2.graphics.endStroke();			
+            ball2.x = w+150;
+            ball2.y = 250;
+		// Dessin cabine
+			var cab = new createjs.Shape();
+			cab.graphics.setStrokeStyle(3, 'round', 'round');
+			cab.graphics.beginStroke('#00');
+			cab.graphics.beginFill('#fff').drawRoundRect(0,0,80,80,2);
+			cab.graphics.endStroke();
+			cab.graphics.endFill();			
+			cab.x = w+260;
+			cab.y = 145;
+		// Dessin remorque
+			var truck = new createjs.Shape();
+			truck.graphics.setStrokeStyle(3, 'round', 'round');
+			truck.graphics.beginStroke('#00');
+			truck.graphics.beginFill('#fff').drawRoundRect(0,h*0.3,250,h/30,2);
+			truck.graphics.endStroke();
+			truck.graphics.endFill();			
+			truck.x = w+0;
+			truck.y = 125;		
+			/****/
+			stage.addChild(bandeB, bandeH, gypesL,ball0,ball1,ball2,cab,truck);
+
+			var tween = createjs.Tween.get(ball0, {loop:false})
+			.to({x:300,rotation:-360}, 2000, createjs.Ease.circOut)
+			.wait(800)
+			.to({x:w/1.7+w/3, rotation:360}, 2000, createjs.Ease.circOut);
+			var tween = createjs.Tween.get(ball1, {loop:false})
+			.to({x:25,rotation:-360}, 2000, createjs.Ease.circOut)
+			.wait(800)
+			.to({x:w/1.7+w/6/6, rotation:360}, 2000, createjs.Ease.circOut);
+			var tween = createjs.Tween.get(ball2, {loop:false})
+			.to({x:150, rotation:-360}, 2000, createjs.Ease.circOut)
+			.wait(800)
+			.to({x:w/1.7+w/6, rotation:360}, 2000, createjs.Ease.circOut);
+			/**************************/
+			var tween = createjs.Tween.get(cab, {loop:false})
+			.to({x:w*0.29}, 2000, createjs.Ease.circOut)
+			.wait(800)
+			.to({x:w/1.14}, 2000, createjs.Ease.circOut);
+			var tween = createjs.Tween.get(truck, {loop:false})
+			.to({x:w*0}, 2000, createjs.Ease.circOut)
+			.wait(800)
+			.to({x:w/1.7}, 2000, createjs.Ease.circOut);
+			/*********************************************/
+			var tween = createjs.Tween.get(bandeB, {loop:false})
+			.wait(2800)
+			.to({x:w/1.7}, 2000, createjs.Ease.circOut);
+			var tween = createjs.Tween.get(bandeH, {loop:false})
+			.wait(2800)
+			.to({x:w/1.7}, 2000, createjs.Ease.circOut);
+			var tween = createjs.Tween.get(gypesL, {loop:false})
+			.wait(2800)
+			.to({x:w/1.7}, 2000, createjs.Ease.circOut);
+			
+			createjs.Ticker.addEventListener("tick", stage);
+			createjs.Ticker.setFPS(60);
+			
+			function tick() {
+			stage.update();			
+			}
+		}
+	</script>
+</head>
+<body onLoad="init();">
+	<canvas id="demoCanvas" width="900" height="300">
+		alternate content
+	</canvas>
+</body>
+</html>

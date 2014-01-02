@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rouleaux automatique</title>
+	<script src="js/EaselJS-release_v0.7.0/lib/easeljs-0.7.0.min.js"></script>
+	<script src="js/TweenJS-release_v0.5.0/lib/tweenjs-0.5.0.min.js"></script>
+	
+	<script>
+		function init() {
+			var stage = new createjs.Stage("demoCanvas");
+			w = stage.canvas.width;
+			h = stage.canvas.height;
+			
+
+			var bandeB = new createjs.Shape();
+			bandeB.graphics.beginFill("#ccc").drawRoundRect(1,h*0.9,w*0.333, h*0.03, 2);
+			bandeB.graphics.endFill();
+
+			var bandeH = new createjs.Shape();
+			bandeH.graphics.beginFill("#ccc000").drawRoundRect(w/3,h*0.7,w*0.333, h*0.03, 2);
+			bandeH.graphics.endFill();
+			
+			var gypesL = new createjs.Shape();
+			gypesL.graphics.beginFill("#727272").drawRoundRect(w/3.955,h*0.4, w/14, h/5.9, 2);
+			gypesL.graphics.endFill();
+			
+			var pipe = new createjs.Shape();
+			pipe.graphics.setStrokeStyle(5, 'round', 'round');
+			pipe.graphics.beginStroke(('#000000'));
+			pipe.graphics.drawRoundRect(w/4,h*0.41, w/13, h/3.2, 2);
+			pipe.graphics.endFill();
+			pipe.graphics.endStroke();	
+			
+			stage.addChild(bandeB, bandeH, pipe, gypesL);
+
+			var tween = createjs.Tween.get(bandeH, {loop:false})
+			.wait(1200)
+			.to({scaleX:1.5}, 1220);
+			
+			var tween = createjs.Tween.get(bandeB, {loop:false})
+			.to({scaleX:3}, 2400);
+			
+			var tween = createjs.Tween.get (gypesL, {loop:false})
+			.to({y:h*0.33}, 500, createjs.Ease.none)
+			.to({scaleX:3.1}, 2500, createjs.Ease.none);
+			
+			/*
+			 * I can't just make grow up the element without moving it The scale, moves the position of the the element
+			 */
+
+
+			createjs.Ticker.addEventListener("tick", stage);
+			createjs.Ticker.setFPS(60);
+			
+			function tick() {			
+			stage.update();			
+			}
+		}
+	</script>
+</head>
+<body onLoad="init();">
+	<canvas id="demoCanvas" width="900" height="300">
+		alternate content
+	</canvas>
+</body>
+</html>

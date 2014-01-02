@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'Tangerine';	
+	src: url('../fonts/tangerine/Tangerine_Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}/***********************/
+
+@font-face {
+	font-family: 'Simonetta';	
+	src: url('../fonts/simonetta/Simonetta-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OleoScriptSwashCaps';	
+	src: url('../fonts/oleo_script_swash_caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NewRocker';	
+	src: url('../fonts/new_rocker/NewRocker.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MacondoSwashCaps';	
+	src: url('../fonts/macondo_swash_caps/MacondoSwashCaps.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}/***********************/
+
+@font-face {
+	font-family: 'Iceland';	
+	src: url('../fonts/iceland/Iceland.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}/***********************/
+
+@font-face {
+	font-family: 'Electrolize';	
+	src: url('../fonts/electrolize/Electrolize.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Qteam';	
+	src: url('../fonts/fontello/fontello.eot?18680920');
+	src: url('../fonts/fontello/fontello.eot?18680920#iefix') format('embedded-opentype'),
+	     url('../fonts/fontello/fontello.woff?18680920') format('woff'),
+	     url('../fonts/fontello/fontello.ttf?18680920') format('truetype'),
+	     url('../fonts/fontello/fontello.svg?18680920#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "Qteam";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: .2em;
+}
+.icon-left:before { content: '\e800'; } /* '' */
+.icon-right:before { content: '\e801'; } /* '' */

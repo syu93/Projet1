@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rouleaux automatique</title>
+	<script src="js/EaselJS-release_v0.7.0/lib/easeljs-0.7.0.min.js"></script>
+	<script src="js/TweenJS-release_v0.5.0/lib/tweenjs-0.5.0.min.js"></script>
+	
+	<script>
+		function init() {
+			var stage = new createjs.Stage("demoCanvas");
+			w = stage.canvas.width;
+			h = stage.canvas.height;
+
+			var rond = new createjs.Shape();
+            rond.graphics.setStrokeStyle(1, 'round', 'round');
+            rond.graphics.beginStroke(('#ccc'));
+			rond.graphics.beginFill("#ccc").drawCircle(0,0,100);
+            rond.graphics.endStroke();
+            rond.graphics.endFill();
+			rond.graphics.endStroke();
+			rond.graphics.setStrokeStyle(2, 'round', 'round');
+            rond.graphics.beginStroke(('#ff0000'));
+            rond.graphics.moveTo(20,0);
+            rond.graphics.lineTo(-20,0);
+
+            rond.graphics.moveTo(0,20);
+            rond.graphics.lineTo(0,-20);
+			rond.graphics.beginStroke(('#000000'));
+			rond.graphics.setStrokeStyle(1, 'round', 'round');
+			
+            rond.x = w/3;
+            rond.y = h/2;
+			
+			var rond1 = new createjs.Shape();
+            rond1.graphics.setStrokeStyle(1, 'round', 'round');
+            rond1.graphics.beginStroke(('#ccc'));
+			rond1.graphics.beginFill("#ccc000").drawCircle(0,0,100);
+            rond1.graphics.endStroke();
+            rond1.graphics.endFill();
+			rond1.graphics.endStroke();
+			rond1.graphics.setStrokeStyle(2, 'round', 'round');
+            rond1.graphics.beginStroke(('#ff0000'));
+            rond1.graphics.moveTo(20,0);
+            rond1.graphics.lineTo(-20,0);
+
+            rond1.graphics.moveTo(0,20);
+            rond1.graphics.lineTo(0,-20);
+			rond1.graphics.beginStroke(('#000000'));
+			rond1.graphics.setStrokeStyle(1, 'round', 'round');
+			
+            rond1.x = w/1.5;
+            rond1.y = h/2;
+			
+			stage.addChild(rond, rond1);
+
+			var tween = createjs.Tween.get(rond, {loop:false})
+			.to({rotation:360,scaleX:0.1, scaleY:0.1}, 4000)
+			.call(rollEnd);			
+			function rollEnd(){
+				var end = true;
+				
+				if (end == true){
+					var tween = createjs.Tween.get(rond1, {loop:false})
+					.to({rotation:-360,scaleX:0.1, scaleY:0.1}, 4000)
+					.call(rollEnd);	
+				}					
+			}
+			createjs.Ticker.addEventListener("tick", stage);
+			createjs.Ticker.setFPS(60);
+			
+			function tick() {
+			
+			stage.update();			
+			}
+		}
+	</script>
+</head>
+<body onLoad="init();">
+	<canvas id="demoCanvas" width="900" height="300">
+		alternate content
+	</canvas>
+</body>
+</html>

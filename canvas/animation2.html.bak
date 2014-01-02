@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation tapis roulant</title>
+	<script src="js/EaselJS-release_v0.7.0/lib/easeljs-0.7.0.min.js"></script>
+	<script src="js/TweenJS-release_v0.5.0/lib/tweenjs-0.5.0.min.js"></script>
+	
+	<script>
+		function init() {
+			var stage = new createjs.Stage("demoCanvas");
+			w = stage.canvas.width;
+			h = stage.canvas.height;
+			
+			//Dessin tapis
+			var tapis = new createjs.Shape();
+			tapis.graphics.beginFill("#000").drawRoundRect(0,h-50,w, 10, 2);
+			tapis.graphics.endFill();
+			// Dessin gypes
+			var gypes = new createjs.Bitmap("img/gypes.png");
+			gypes.x = 0;
+			gypes.y = 209;
+			gypes.scaleX = 0.3;
+			gypes.scaleY = 0.3;
+			
+			var gypes2  = new createjs.Bitmap("img/gypes.png");
+			gypes2.x = 50;
+			gypes2.y = 209;
+			gypes2.scaleX = 0.3;
+			gypes2.scaleY = 0.3;
+			
+			var gypes3  = new createjs.Bitmap("img/gypes.png");
+			gypes3.x = 100;
+			gypes3.y = 209;
+			gypes3.scaleX = 0.3;
+			gypes3.scaleY = 0.3;
+			
+			var gypes4  = new createjs.Bitmap("img/gypes.png");
+			gypes4.x = 150;
+			gypes4.y = 209;
+			gypes4.scaleX = 0.3;
+			gypes4.scaleY = 0.3;
+			
+			var gypes5  = new createjs.Bitmap("img/gypes.png");
+			gypes5.x = 200;
+			gypes5.y = 209;
+			gypes5.scaleX = 0.3;
+			gypes5.scaleY = 0.3;
+			
+			stage.addChild(tapis, gypes,gypes2,gypes3,gypes4 ,gypes5);
+			
+			var tween = createjs.Tween.get(gypes, {loop:false}).to({x:w*0.75}, 3100);
+			var tween = createjs.Tween.get(gypes2, {loop:false}).to({x:w*0.80}, 3100);
+			var tween = createjs.Tween.get(gypes3, {loop:false}).to({x:w*0.85}, 3100);
+			var tween = createjs.Tween.get(gypes4, {loop:false}).to({x:w*0.90}, 3100);
+			var tween = createjs.Tween.get(gypes5, {loop:false}).to({x:w*0.95}, 3100);
+			
+			createjs.Ticker.addEventListener("tick", tick);
+			createjs.Ticker.setFPS(60);
+			
+			function tick() {
+				stage.update();
+			}
+		}
+		
+	</script>
+</head>
+<body onLoad="init();">
+	<canvas id="demoCanvas" width="90" height="30">
+		alternate content
+	</canvas>
+</body>
+</html>
