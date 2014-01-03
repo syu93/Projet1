@@ -307,7 +307,7 @@ function(){
 	var ball0 = new createjs.Shape();
 	ball0.graphics.setStrokeStyle(5, 'round', 'round');
 	ball0.graphics.beginStroke(('#000000'));
-	ball0.graphics.beginFill("#ccc").drawCircle(0,0,20);
+	ball0.graphics.beginFill("red").drawCircle(0,0,20);
 	ball0.graphics.endStroke();
 	ball0.graphics.endFill();
 	ball0.graphics.setStrokeStyle(1, 'round', 'round');
@@ -320,8 +320,8 @@ function(){
 
 	ball0.graphics.endStroke();
 	
-	ball0.x = 300;
-	ball0.y = 250;
+	ball0.x = w*0.189;
+	ball0.y = h*0.5;
 	// Dessin de Roue truck 1	
 	var ball1 = new createjs.Shape();
 	ball1.graphics.setStrokeStyle(5, 'round', 'round');
@@ -339,8 +339,8 @@ function(){
 
 	ball1.graphics.endStroke();
 	
-	ball1.x = 25;
-	ball1.y = 250;
+	ball1.x = w*0.0189;
+	ball1.y = h*0.5;
 	// Dessin de Roue truck 2
 	var ball2 = new createjs.Shape();
 	ball2.graphics.setStrokeStyle(5, 'round', 'round');
@@ -359,8 +359,8 @@ function(){
 
 	ball2.graphics.endStroke();
 	
-	ball2.x = 150;
-	ball2.y = 250;
+	ball2.x = w*0.1;  
+	ball2.y = h*0.5;
 	// Dessin cabine
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
@@ -369,8 +369,8 @@ function(){
 	cab.graphics.endStroke();
 	cab.graphics.endFill();
 	
-	cab.x = 260;
-	cab.y = 145;
+	cab.x =  w*0.165;
+	cab.y = h*0.38; 
 	// Dessin remorque
 	var truck = new createjs.Shape();
 	truck.graphics.setStrokeStyle(3, 'round', 'round');
@@ -380,7 +380,7 @@ function(){
 	truck.graphics.endFill();
 	
 	truck.x = 0;
-	truck.y = 125;			
+	truck.y = h*0.357;
 	// Ajout au conteneur
 	group1.addChild(ball0,ball1,ball2,cab,truck);
 
