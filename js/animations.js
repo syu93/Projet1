@@ -320,7 +320,7 @@ function(){
 
 	ball0.graphics.endStroke();
 	
-	ball0.x = w*0.189;
+	ball0.x = w*0.23;
 	ball0.y = h*0.5;
 	// Dessin de Roue truck 1	
 	var ball1 = new createjs.Shape();
@@ -369,7 +369,7 @@ function(){
 	cab.graphics.endStroke();
 	cab.graphics.endFill();
 	
-	cab.x =  w*0.165;
+	cab.x =  w*0.202;
 	cab.y = h*0.38; 
 	// Dessin remorque
 	var truck = new createjs.Shape();
@@ -379,7 +379,7 @@ function(){
 	truck.graphics.endStroke();
 	truck.graphics.endFill();
 	
-	truck.x = 0;
+	truck.x = w*0.002;
 	truck.y = h*0.357;
 	// Ajout au conteneur
 	group1.addChild(ball0,ball1,ball2,cab,truck);
@@ -523,7 +523,7 @@ function(){
 	.to(ball2, 2, {rotation:360, x:w/1.7+w/6}, "label1")
 	.to(cab, 2, {x:w/1.14}, "label1")
 	.to(truck, 2, {x:w/1.7}, "label1")
-	.to(group1, 0.5, {alpha:0})
+	/*.to(group1, 0.5, {alpha:0})
 	.to(group2, 1, {alpha:1})
 	.to(gypes, 3.1, {x:w*0.75}, "label2")
 	.to(gypes2, 3.1, {x:w*0.80}, "label2")
@@ -544,7 +544,7 @@ function(){
 	.to(ball1, 3, {x:w/1.7+w/3, rotation:360},"label4")
 	.to(ball2, 3, {x:w/1.7+w/3, rotation:360},"label4")
 	.to(cab, 3, {x:w/1.14},"label4")
-	.to(truck, 3, {x:w/1.7},"label4")
+	.to(truck, 3, {x:w/1.7},"label4")*/
 	.eventCallback("onComplete", function(){
 		setTimeout(function(){
 			stage.removeAllChildren();
