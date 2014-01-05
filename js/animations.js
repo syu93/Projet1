@@ -293,8 +293,8 @@ function(){
 	h = $('#animations').height(),
 	canvasTl = new TimelineMax(),
 	stage = new createjs.Stage("animations");
-	alert(w);
-	alert(h);
+	//alert(w);
+	//alert(h);
 // THE VEIL
 	veil = new createjs.Shape();
 	veil.graphics.beginFill("#fff").drawRect(0, 0, w, h);
@@ -308,7 +308,7 @@ function(){
 	var ball0 = new createjs.Shape();
 	ball0.graphics.setStrokeStyle(5, 'round', 'round');
 	ball0.graphics.beginStroke(('#000000'));
-	ball0.graphics.beginFill("red").drawCircle(0,0,w*0.016);
+	ball0.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
 	ball0.graphics.endStroke();
 	ball0.graphics.endFill();
 	ball0.graphics.setStrokeStyle(1, 'round', 'round');
@@ -322,7 +322,7 @@ function(){
 	ball0.graphics.endStroke();
 	
 	ball0.x = w*0.23;
-	ball0.y = h*0.496;
+	ball0.y = h*0.4973;
 	// Dessin de Roue truck 1	
 	var ball1 = new createjs.Shape();
 	ball1.graphics.setStrokeStyle(5, 'round', 'round');
@@ -341,7 +341,7 @@ function(){
 	ball1.graphics.endStroke();
 	
 	ball1.x = w*0.0189;
-	ball1.y = h*0.496;
+	ball1.y = h*0.4973;
 	// Dessin de Roue truck 2
 	var ball2 = new createjs.Shape();
 	ball2.graphics.setStrokeStyle(5, 'round', 'round');
@@ -361,7 +361,7 @@ function(){
 	ball2.graphics.endStroke();
 	
 	ball2.x = w*0.1;  
-	ball2.y = h*0.496;
+	ball2.y = h*0.4973;
 	// Dessin cabine
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
