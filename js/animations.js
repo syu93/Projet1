@@ -322,7 +322,7 @@ function(){
 	ball0.graphics.endStroke();
 	
 	ball0.x = w*0.23;
-	ball0.y = h*0.5;
+	ball0.y = h*0.496;
 	// Dessin de Roue truck 1	
 	var ball1 = new createjs.Shape();
 	ball1.graphics.setStrokeStyle(5, 'round', 'round');
@@ -341,7 +341,7 @@ function(){
 	ball1.graphics.endStroke();
 	
 	ball1.x = w*0.0189;
-	ball1.y = h*0.5;
+	ball1.y = h*0.496;
 	// Dessin de Roue truck 2
 	var ball2 = new createjs.Shape();
 	ball2.graphics.setStrokeStyle(5, 'round', 'round');
@@ -361,7 +361,7 @@ function(){
 	ball2.graphics.endStroke();
 	
 	ball2.x = w*0.1;  
-	ball2.y = h*0.5;
+	ball2.y = h*0.496;
 	// Dessin cabine
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
