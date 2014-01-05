@@ -366,7 +366,7 @@ function(){
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
 	cab.graphics.beginStroke('#00');
-	cab.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,w*0.064,2);
+	cab.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,h*0.089,2);
 	cab.graphics.endStroke();
 	cab.graphics.endFill();
 	
@@ -376,7 +376,7 @@ function(){
 	var truck = new createjs.Shape();
 	truck.graphics.setStrokeStyle(3, 'round', 'round');
 	truck.graphics.beginStroke('#00');
-	truck.graphics.beginFill('#fff').drawRoundRect(0,0,250,100,2);
+	truck.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.196,h*0.111,2);
 	truck.graphics.endStroke();
 	truck.graphics.endFill();
 	
@@ -519,7 +519,7 @@ function(){
 
 	canvasTl.to(veil, 0.1, {alpha:0.98})
 	.to(group1, 1, {alpha:1, delay:1})
-	.to(ball0, 2, {rotation:360, x:w/1.7+w/3}, "label1")
+	/*.to(ball0, 2, {rotation:360, x:w/1.7+w/3}, "label1")
 	.to(ball1, 2, {rotation:360, x:w/1.7+w/6/6}, "label1")
 	.to(ball2, 2, {rotation:360, x:w/1.7+w/6}, "label1")
 	.to(cab, 2, {x:w/1.14}, "label1")
