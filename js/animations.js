@@ -308,16 +308,16 @@ function(){
 	var ball0 = new createjs.Shape();
 	ball0.graphics.setStrokeStyle(5, 'round', 'round');
 	ball0.graphics.beginStroke(('#000000'));
-	ball0.graphics.beginFill("red").drawCircle(0,0,20);
+	ball0.graphics.beginFill("red").drawCircle(0,0,w*0.016);
 	ball0.graphics.endStroke();
 	ball0.graphics.endFill();
 	ball0.graphics.setStrokeStyle(1, 'round', 'round');
 	ball0.graphics.beginStroke(('#000000'));
-	ball0.graphics.moveTo(20,0);
-	ball0.graphics.lineTo(-20,0);
+	ball0.graphics.moveTo(w*0.016,0);
+	ball0.graphics.lineTo(-w*0.016,0);
 
-	ball0.graphics.moveTo(0,20);
-	ball0.graphics.lineTo(0,-20);
+	ball0.graphics.moveTo(0,w*0.016);
+	ball0.graphics.lineTo(0,-w*0.016);
 
 	ball0.graphics.endStroke();
 	
@@ -327,16 +327,16 @@ function(){
 	var ball1 = new createjs.Shape();
 	ball1.graphics.setStrokeStyle(5, 'round', 'round');
 	ball1.graphics.beginStroke(('#000000'));
-	ball1.graphics.beginFill("#ccc").drawCircle(0,0,20);
+	ball1.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
 	ball1.graphics.endStroke();
 	ball1.graphics.endFill();
 	ball1.graphics.setStrokeStyle(1, 'round', 'round');
 	ball1.graphics.beginStroke(('#000000'));
-	ball1.graphics.moveTo(20,0);
+	ball1.graphics.moveTo(w*0.016,0);
 	ball1.graphics.lineTo(-20,0);
 
-	ball1.graphics.moveTo(0,20);
-	ball1.graphics.lineTo(0,-20);
+	ball1.graphics.moveTo(0,w*0.016);
+	ball1.graphics.lineTo(0,-w*0.016);
 
 	ball1.graphics.endStroke();
 	
@@ -346,17 +346,17 @@ function(){
 	var ball2 = new createjs.Shape();
 	ball2.graphics.setStrokeStyle(5, 'round', 'round');
 	ball2.graphics.beginStroke(('#000000'));
-	ball2.graphics.beginFill("#ccc").drawCircle(0,0,20);
+	ball2.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
 	ball2.graphics.endStroke();
 	ball2.graphics.endFill();
 	
 	ball2.graphics.setStrokeStyle(1, 'round', 'round');
 	ball2.graphics.beginStroke(('#000000'));
-	ball2.graphics.moveTo(20,0);
-	ball2.graphics.lineTo(-20,0);
+	ball2.graphics.moveTo(w*0.016,0);
+	ball2.graphics.lineTo(-w*0.016,0);
 
-	ball2.graphics.moveTo(0,20);
-	ball2.graphics.lineTo(0,-20);
+	ball2.graphics.moveTo(0,w*0.016);
+	ball2.graphics.lineTo(0,-w*0.016);
 
 	ball2.graphics.endStroke();
 	
