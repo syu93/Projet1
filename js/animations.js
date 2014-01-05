@@ -293,7 +293,8 @@ function(){
 	h = $('#animations').height(),
 	canvasTl = new TimelineMax(),
 	stage = new createjs.Stage("animations");
-
+	alert(w);
+	alert(h);
 // THE VEIL
 	veil = new createjs.Shape();
 	veil.graphics.beginFill("#fff").drawRect(0, 0, w, h);
@@ -491,7 +492,7 @@ function(){
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
 	cab.graphics.beginStroke('#00');
-	cab.graphics.beginFill('#fff').drawRoundRect(0,0,80,80,2);
+	cab.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,w*0.064,2);
 	cab.graphics.endStroke();
 	cab.graphics.endFill();			
 	cab.x = w+260;
