@@ -366,7 +366,7 @@ function(){
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
 	cab.graphics.beginStroke('#00');
-	cab.graphics.beginFill('#fff').drawRoundRect(0,0,80,80,2);
+	cab.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,w*0.064,2);
 	cab.graphics.endStroke();
 	cab.graphics.endFill();
 	
@@ -386,7 +386,7 @@ function(){
 	group1.addChild(ball0,ball1,ball2,cab,truck);
 
 // -------- container 2 ------------------------------------------
-	var group2 = new createjs.Container();
+	/*var group2 = new createjs.Container();
 	group2.alpha = 0;
 
 	var tapis = new createjs.Shape();
@@ -423,10 +423,10 @@ function(){
 	gypes5.scaleX = 0.3;
 	gypes5.scaleY = 0.3;
 
-	group2.addChild(tapis, gypes,gypes2,gypes3,gypes4 ,gypes5);
+	group2.addChild(tapis, gypes,gypes2,gypes3,gypes4 ,gypes5);*/
 
 // -------- container 8 ------------------------------------------
-	var group8 = new createjs.Container();
+	/*var group8 = new createjs.Container();
 	group8.alpha = 0;
 
 	var bandeB = new createjs.Shape();
@@ -507,11 +507,11 @@ function(){
 	truck.x = w+0;
 	truck.y = 125;
 
-	group8.addChild(bandeB, bandeH, gypesL,ball0,ball1,ball2,cab,truck);
+	group8.addChild(bandeB, bandeH, gypesL,ball0,ball1,ball2,cab,truck);*/
 
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
-    stage.addChild(veil, group1, group2, group8);
+    stage.addChild(veil, group1/*, group2,*/ /*group8*/);
 	TweenMax.ticker.addEventListener("tick", stage.update, stage);
 	stage.update();
 //--------------------------------------------------------------------
