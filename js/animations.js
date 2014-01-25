@@ -323,6 +323,7 @@ function(){
 	
 	ball0.x = w*0.23;
 	ball0.y = h*0.4973;
+	
 	// Dessin de Roue truck 1	
 	var ball1 = new createjs.Shape();
 	ball1.graphics.setStrokeStyle(5, 'round', 'round');
@@ -342,7 +343,8 @@ function(){
 	
 	ball1.x = w*0.0189;
 	ball1.y = h*0.4973;
-	// Dessin de Roue truck 2
+	
+	// Dessin de Roue truck 2	
 	var ball2 = new createjs.Shape();
 	ball2.graphics.setStrokeStyle(5, 'round', 'round');
 	ball2.graphics.beginStroke(('#000000'));
@@ -362,6 +364,7 @@ function(){
 	
 	ball2.x = w*0.1;  
 	ball2.y = h*0.4973;
+	
 	// Dessin cabine
 	var cab = new createjs.Shape();
 	cab.graphics.setStrokeStyle(3, 'round', 'round');
@@ -371,7 +374,8 @@ function(){
 	cab.graphics.endFill();
 	
 	cab.x =  w*0.202;
-	cab.y = h*0.38; 
+	cab.y = h*0.38;
+	
 	// Dessin remorque
 	var truck = new createjs.Shape();
 	truck.graphics.setStrokeStyle(3, 'round', 'round');
@@ -383,6 +387,7 @@ function(){
 	truck.x = w*0.002;
 	truck.y = h*0.357;
 	// Ajout au conteneur
+	
 	group1.addChild(ball0,ball1,ball2,cab,truck);
 
 // -------- container 2 ------------------------------------------
@@ -519,11 +524,11 @@ function(){
 
 	canvasTl.to(veil, 0.1, {alpha:0.98})
 	.to(group1, 1, {alpha:1, delay:1})
-	/*.to(ball0, 2, {rotation:360, x:w/1.7+w/3}, "label1")
-	.to(ball1, 2, {rotation:360, x:w/1.7+w/6/6}, "label1")
-	.to(ball2, 2, {rotation:360, x:w/1.7+w/6}, "label1")
-	.to(cab, 2, {x:w/1.14}, "label1")
-	.to(truck, 2, {x:w/1.7}, "label1")
+	.to(ball0, 2, {rotation:360, x:w*0.23+(3*(w*0.23))}, "label1")
+	.to(ball1, 2, {rotation:360, x:w*0.0189+(3*(w*0.23))}, "label1")
+	.to(ball2, 2, {rotation:360, x:w*0.1+(3*(w*0.23))}, "label1")
+	.to(cab, 2, {x:w*0.202+(3*(w*0.23))}, "label1")
+	.to(truck, 2, {x:w*0.002+(3*(w*0.23))}, "label1")
 	/*.to(group1, 0.5, {alpha:0})
 	.to(group2, 1, {alpha:1})
 	.to(gypes, 3.1, {x:w*0.75}, "label2")
