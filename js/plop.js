@@ -26,7 +26,7 @@ function(){
 	placo_txt1_bg.graphics.beginFill("#2ecc71").drawRect(0, 0, placo_txt1.getMeasuredLineHeight() + 28, h);
 	placo_txt1_bg.alpha = 0;
 
-	var placo_txt11 = new createjs.Text("Leader sur le march√© du pl√¢tre et de l‚Äôisolation, la soci√©t√© con√ßoit des solutions innovantes et performantes, √† destination des professionnels de la construction, mais aussi des particuliers.", "55px Simonetta", "#95A5A6");
+	var placo_txt11 = new createjs.Text("Leader sur le marchÈ du pl‚tre et de líisolation, la sociÈtÈ conÁoit des solutions innovantes et performantes, ‡ destination des professionnels de la construction, mais aussi des particuliers.", "55px Simonetta", "#95A5A6");
 	placo_txt11.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt11.alpha = 0;
 	placo_txt11.lineWidth = w - (placo_txt1.getMeasuredHeight()+208);
@@ -48,7 +48,7 @@ function(){
 	group2.scaleY = 0.2;
 	group2.alpha = 0;
 
-	var placo_txt2 = new createjs.Text("De 1920 √† nos jours ...", "100px Iceland", "#3498db");
+	var placo_txt2 = new createjs.Text("De 1920 ‡ nos jours ...", "100px Iceland", "#3498db");
 	placo_txt2.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt2.regX = placo_txt2.getMeasuredWidth()/2;
 	placo_txt2.regY = placo_txt2.getMeasuredHeight()/2;
@@ -62,7 +62,7 @@ function(){
 	placo_txt21.x = w/2;
 	placo_txt21.y = h/3;
 
-	var placo_txt211 = new createjs.Text("Exploitation du gypse et cr√©ation du site par les soci√©t√©s Lambert, Poliet&Chausson", "1px Simonetta", "#95A5A6");
+	var placo_txt211 = new createjs.Text("Exploitation du gypse et crÈation du site par les sociÈtÈs Lambert, Poliet&Chausson", "1px Simonetta", "#95A5A6");
 	placo_txt211.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt211.x = placo_txt21.x+56;
 	placo_txt211.y = placo_txt21.y;
@@ -77,7 +77,7 @@ function(){
 	placo_txt22.y = h/20;
 	placo_txt22.rotation = 35;
 
-	var placo_txt221 = new createjs.Text("Cr√©ation de la soci√©t√© Placoplatre", "1px Simonetta", "#95A5A6");
+	var placo_txt221 = new createjs.Text("CrÈation de la sociÈtÈ Placoplatre", "1px Simonetta", "#95A5A6");
 	placo_txt221.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt221.x = placo_txt22.x+84;
 	placo_txt221.y = placo_txt22.y+123;
@@ -88,7 +88,7 @@ function(){
 	placo_txt23.x = w/20;
 	placo_txt23.y = (19*h/20)-placo_txt23.getMeasuredHeight();
 
-	var placo_txt231 = new createjs.Text("Cr√©ation de la premi√®re plaque de pl√¢tre", "1px Simonetta", "#95A5A6");
+	var placo_txt231 = new createjs.Text("CrÈation de la premiËre plaque de pl‚tre", "1px Simonetta", "#95A5A6");
 	placo_txt231.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt231.x = placo_txt23.x+96;
 	placo_txt231.y = placo_txt23.y+46;
@@ -100,7 +100,7 @@ function(){
 	placo_txt24.y = (3*h/5)-placo_txt24.getMeasuredHeight();
 	placo_txt24.rotation = 15;
 
-	var placo_txt241 = new createjs.Text("Mise en place les premiers moules √† carreau", "1px Simonetta", "#95A5A6");
+	var placo_txt241 = new createjs.Text("Mise en place les premiers moules ‡ carreau", "1px Simonetta", "#95A5A6");
 	placo_txt241.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt241.x = placo_txt24.x+82;
 	placo_txt241.y = placo_txt24.y+59;
@@ -111,7 +111,7 @@ function(){
 	placo_txt25.x = 4*w/5;
 	placo_txt25.y = h-placo_txt25.getMeasuredHeight();
 
-	var placo_txt251 = new createjs.Text("D√©marrage de la seconde cha√Æne de production de plaques de pl√¢tres", "1px Simonetta", "#95A5A6");
+	var placo_txt251 = new createjs.Text("DÈmarrage de la seconde chaÓne de production de plaques de pl‚tres", "1px Simonetta", "#95A5A6");
 	placo_txt251.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt251.x = placo_txt25.x+49;
 	placo_txt251.y = placo_txt25.y+49;
@@ -127,7 +127,7 @@ function(){
 	placo_txt26.rotation = 20;
 	placo_txt24.rotation = 15;
 
-	var placo_txt261 = new createjs.Text("Modernisation de la premi√®re cha√Æne de production de plaque de pl√¢tre", "1px Simonetta", "#95A5A6");
+	var placo_txt261 = new createjs.Text("Modernisation de la premiËre chaÓne de production de plaque de pl‚tre", "1px Simonetta", "#95A5A6");
 	placo_txt261.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt261.x = placo_txt26.x+112;
 	placo_txt261.y = placo_txt26.y+78;
@@ -142,7 +142,7 @@ function(){
 	placo_txt27.y = h/20+placo_txt27.getMeasuredHeight();
 	placo_txt27.rotation = -25;
 
-	var placo_txt271 = new createjs.Text("D√©marrage de l‚Äôatelier de recyclage de plaques de pl√¢tre et d√©but de la r√©habilitation des carri√®res", "1px Simonetta", "#95A5A6");
+	var placo_txt271 = new createjs.Text("DÈmarrage de líatelier de recyclage de plaques de pl‚tre et dÈbut de la rÈhabilitation des carriËres", "1px Simonetta", "#95A5A6");
 	placo_txt271.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt271.x = placo_txt27.x+26;
 	placo_txt271.y = placo_txt27.y+37;
@@ -157,7 +157,7 @@ function(){
 	placo_txt28.y = (3*h/4)-placo_txt28.getMeasuredHeight();
 	placo_txt28.rotation = -45;
 
-	var placo_txt281 = new createjs.Text("Construction de la nouvelle cha√Æne de production de plaques de pl√¢tre : V5 ", "1px Simonetta", "#95A5A6");
+	var placo_txt281 = new createjs.Text("Construction de la nouvelle chaÓne de production de plaques de pl‚tre : V5 ", "1px Simonetta", "#95A5A6");
 	placo_txt281.shadow =  new createjs.Shadow("#999", 0, 0, 2);
 	placo_txt281.x = placo_txt28.x+264;
 	placo_txt281.y = placo_txt28.y-201;
@@ -323,7 +323,7 @@ function(){
 	
 	ball0.x = w*0.23;
 	ball0.y = h*0.4973;
-
+	
 	// Dessin de Roue truck 1	
 	var ball1 = new createjs.Shape();
 	ball1.graphics.setStrokeStyle(5, 'round', 'round');
@@ -391,149 +391,132 @@ function(){
 	group1.addChild(ball0,ball1,ball2,cab,truck);
 
 // -------- container 2 ------------------------------------------
-	var group2 = new createjs.Container();
+	/*var group2 = new createjs.Container();
 	group2.alpha = 0;
 
 	var tapis = new createjs.Shape();
-	tapis.graphics.beginFill("#000").drawRoundRect(0,h*0.50,w, h*0.01, 2);
+	tapis.graphics.beginFill("#000").drawRoundRect(0,h-50,w, 10, 2);
 	tapis.graphics.endFill();
-	
 	// Dessin gypes
 	var gypes = new createjs.Bitmap("img/gypes.png");
-	gypes.x = w*(0*(0.04));
-	gypes.y = h*0.451;
-	gypes.scaleX = w*0.00022;
-	gypes.scaleY = w*0.00022;
+	gypes.x = 0;
+	gypes.y = 209;
+	gypes.scaleX = 0.3;
+	gypes.scaleY = 0.3;
 	
 	var gypes2  = new createjs.Bitmap("img/gypes.png");
-	gypes2.x = w*(1*(0.04));
-	gypes2.y = h*0.451;
-	gypes2.scaleX = w*0.00022;
-	gypes2.scaleY = w*0.00022;
+	gypes2.x = 50;
+	gypes2.y = 209;
+	gypes2.scaleX = 0.3;
+	gypes2.scaleY = 0.3;
 	
 	var gypes3  = new createjs.Bitmap("img/gypes.png");
-	gypes3.x = w*(2*(0.04));
-	gypes3.y = h*0.451;
-	gypes3.scaleX = w*0.00022;
-	gypes3.scaleY = w*0.00022;
+	gypes3.x = 100;
+	gypes3.y = 209;
+	gypes3.scaleX = 0.3;
+	gypes3.scaleY = 0.3;
 	
 	var gypes4  = new createjs.Bitmap("img/gypes.png");
-	gypes4.x = w*(3*(0.04));
-	gypes4.y = h*0.451;
-	gypes4.scaleX = w*0.00022;
-	gypes4.scaleY = w*0.00022;
+	gypes4.x = 150;
+	gypes4.y = 209;
+	gypes4.scaleX = 0.3;
+	gypes4.scaleY = 0.3;
 	
 	var gypes5  = new createjs.Bitmap("img/gypes.png");
-	gypes5.x = w*(4*(0.04));
-	gypes5.y = h*0.451;
-	gypes5.scaleX = w*0.00022;
-	gypes5.scaleY = w*0.00022;
+	gypes5.x = 200;
+	gypes5.y = 209;
+	gypes5.scaleX = 0.3;
+	gypes5.scaleY = 0.3;
 
-	group2.addChild(tapis, gypes,gypes2,gypes3,gypes4 ,gypes5);
+	group2.addChild(tapis, gypes,gypes2,gypes3,gypes4 ,gypes5);*/
 
 // -------- container 8 ------------------------------------------
-	var group8 = new createjs.Container();
+	/*var group8 = new createjs.Container();
 	group8.alpha = 0;
 
 	var bandeB = new createjs.Shape();
-	bandeB.graphics.beginFill("#ccc").drawRoundRect(w*0.002,h*0.460,w*0.1,h*0.01,2);
+	bandeB.graphics.beginFill("#ccc").drawRoundRect(1,h*0.68,w/8, h*0.03, 2);
 	bandeB.graphics.endFill();
 
 	var bandeH = new createjs.Shape();
-	bandeH.graphics.beginFill("#ccc000").drawRoundRect(w*0.002,h*0.36,w*0.1,h*0.01,2);
+	bandeH.graphics.beginFill("#ccc000").drawRoundRect(1,h*0.48,w/8, h*0.03, 2);
 	bandeH.graphics.endFill();
 	
 	var gypesL = new createjs.Shape();
-	gypesL.graphics.beginFill("#727272").drawRoundRect(w*0.002,h*0.37,w*0.1,h*0.091,2);
+	gypesL.graphics.beginFill("#727272").drawRoundRect(1,h*0.51,w/8, h/5.9, 2);
 	gypesL.graphics.endFill();
-	
-	// Dessin de Roue cab
-	var roue1 = new createjs.Shape();
-	roue1.graphics.setStrokeStyle(5, 'round', 'round');
-	roue1.graphics.beginStroke(('#000000'));
-	roue1.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
-	roue1.graphics.endStroke();
-	roue1.graphics.endFill();
-	roue1.graphics.setStrokeStyle(1, 'round', 'round');
-	roue1.graphics.beginStroke(('#000000'));
-	roue1.graphics.moveTo(w*0.016,0);
-	roue1.graphics.lineTo(-w*0.016,0);
 
-	roue1.graphics.moveTo(0,w*0.016);
-	roue1.graphics.lineTo(0,-w*0.016);
-
-	roue1.graphics.endStroke();
-	
-	roue1.x = w*0.23+(3*(w*0.23));
-	roue1.y = h*0.4973;
-	
+	var ball0 = new createjs.Shape();
+	ball0.graphics.setStrokeStyle(5, 'round', 'round');
+	ball0.graphics.beginStroke(('#000000'));
+	ball0.graphics.beginFill("#ccc").drawCircle(0,0,20);
+	ball0.graphics.endStroke();
+	ball0.graphics.endFill();
+	ball0.graphics.setStrokeStyle(1, 'round', 'round');
+	ball0.graphics.beginStroke(('#000000'));
+	ball0.graphics.moveTo(20,0);
+	ball0.graphics.lineTo(-20,0);
+	ball0.graphics.moveTo(0,20);
+	ball0.graphics.lineTo(0,-20);
+	ball0.graphics.endStroke();			
+	ball0.x = w+300;
+	ball0.y = 250;
 	// Dessin de Roue truck 1	
-	var roue2 = new createjs.Shape();
-	roue2.graphics.setStrokeStyle(5, 'round', 'round');
-	roue2.graphics.beginStroke(('#000000'));
-	roue2.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
-	roue2.graphics.endStroke();
-	roue2.graphics.endFill();
-	roue2.graphics.setStrokeStyle(1, 'round', 'round');
-	roue2.graphics.beginStroke(('#000000'));
-	roue2.graphics.moveTo(w*0.016,0);
-	roue2.graphics.lineTo(-w*0.016,0);
-
-	roue2.graphics.moveTo(0,w*0.016);
-	roue2.graphics.lineTo(0,-w*0.016);
-
-	roue2.graphics.endStroke();
-	
-	roue2.x = w*0.0189+(3*(w*0.23));
-	roue2.y = h*0.4973;
+	var ball1 = new createjs.Shape();
+	ball1.graphics.setStrokeStyle(5, 'round', 'round');
+	ball1.graphics.beginStroke(('#000000'));
+	ball1.graphics.beginFill("#ccc").drawCircle(0,0,20);
+	ball1.graphics.endStroke();
+	ball1.graphics.endFill();
+	ball1.graphics.setStrokeStyle(1, 'round', 'round');
+	ball1.graphics.beginStroke(('#000000'));
+	ball1.graphics.moveTo(20,0);
+	ball1.graphics.lineTo(-20,0);
+	ball1.graphics.moveTo(0,20);
+	ball1.graphics.lineTo(0,-20);
+	ball1.graphics.endStroke();			
+	ball1.x = w+25;
+	ball1.y = 250;
 	// Dessin de Roue truck 2
-	var roue3 = new createjs.Shape();
-	roue3.graphics.setStrokeStyle(5, 'round', 'round');
-	roue3.graphics.beginStroke(('#000000'));
-	roue3.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
-	roue3.graphics.endStroke();
-	roue3.graphics.endFill();
-	
-	roue3.graphics.setStrokeStyle(1, 'round', 'round');
-	roue3.graphics.beginStroke(('#000000'));
-	roue3.graphics.moveTo(w*0.016,0);
-	roue3.graphics.lineTo(-w*0.016,0);
-
-	roue3.graphics.moveTo(0,w*0.016);
-	roue3.graphics.lineTo(0,-w*0.016);
-
-	roue3.graphics.endStroke();
-	
-	roue3.x = w*0.1+(3*(w*0.23));  
-	roue3.y = h*0.4973;
-	
+	var ball2 = new createjs.Shape();
+	ball2.graphics.setStrokeStyle(5, 'round', 'round');
+	ball2.graphics.beginStroke(('#000000'));
+	ball2.graphics.beginFill("#ccc").drawCircle(0,0,20);
+	ball2.graphics.endStroke();
+	ball2.graphics.endFill();			
+	ball2.graphics.setStrokeStyle(1, 'round', 'round');
+	ball2.graphics.beginStroke(('#000000'));
+	ball2.graphics.moveTo(20,0);
+	ball2.graphics.lineTo(-20,0);
+	ball2.graphics.moveTo(0,20);
+	ball2.graphics.lineTo(0,-20);
+	ball2.graphics.endStroke();			
+	ball2.x = w+150;
+	ball2.y = 250;
 	// Dessin cabine
-	var cab2 = new createjs.Shape();
-	cab2.graphics.setStrokeStyle(3, 'round', 'round');
-	cab2.graphics.beginStroke('#00');
-	cab2.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,h*0.089,2);
-	cab2.graphics.endStroke();
-	cab2.graphics.endFill();
-	
-	cab2.x =  w*0.202+(3*(w*0.23));
-	cab2.y = h*0.38;
-	
+	var cab = new createjs.Shape();
+	cab.graphics.setStrokeStyle(3, 'round', 'round');
+	cab.graphics.beginStroke('#00');
+	cab.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,w*0.064,2);
+	cab.graphics.endStroke();
+	cab.graphics.endFill();			
+	cab.x = w+260;
+	cab.y = 145;
 	// Dessin remorque
-	var truck2 = new createjs.Shape();
-	truck2.graphics.setStrokeStyle(3, 'round', 'round');
-	truck2.graphics.beginStroke('#00');
-	truck2.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.196,h*0.111,2);
-	truck2.graphics.endStroke();
-	truck2.graphics.endFill();
-	
-	truck2.x = w*0.002+(3*(w*0.23));
-	truck2.y = h*0.357;
+	var truck = new createjs.Shape();
+	truck.graphics.setStrokeStyle(3, 'round', 'round');
+	truck.graphics.beginStroke('#00');
+	truck.graphics.beginFill('#fff').drawRoundRect(0,0,250,100,2);
+	truck.graphics.endStroke();
+	truck.graphics.endFill();			
+	truck.x = w+0;
+	truck.y = 125;
 
-	group8.addChild(bandeB, bandeH, gypesL,roue1,roue2,roue3,cab2,truck2);
+	group8.addChild(bandeB, bandeH, gypesL,ball0,ball1,ball2,cab,truck);*/
 
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
-    stage.addChild(veil, group1, group2, group8);
+    stage.addChild(veil, group1/*, group2,*/ /*group8*/);
 	TweenMax.ticker.addEventListener("tick", stage.update, stage);
 	stage.update();
 //--------------------------------------------------------------------
@@ -546,31 +529,28 @@ function(){
 	.to(ball2, 2, {rotation:360, x:w*0.1+(3*(w*0.23))}, "label1")
 	.to(cab, 2, {x:w*0.202+(3*(w*0.23))}, "label1")
 	.to(truck, 2, {x:w*0.002+(3*(w*0.23))}, "label1")
-	.to(group1, 0.5, {alpha:0})
+	/*.to(group1, 0.5, {alpha:0})
 	.to(group2, 1, {alpha:1})
-	.to(gypes, 3.1, {x:w*(0*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes2, 3.1, {x:w*(1*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes3, 3.1, {x:w*(2*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes4, 3.1, {x:w*(3*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes5, 3.1, {x:w*(4*(0.04))+(3.4*(w*0.23))}, "label2")
+	.to(gypes, 3.1, {x:w*0.75}, "label2")
+	.to(gypes2, 3.1, {x:w*0.80}, "label2")
+	.to(gypes3, 3.1, {x:w*0.85}, "label2")
+	.to(gypes4, 3.1, {x:w*0.90}, "label2")
+	.to(gypes5, 3.1, {x:w*0.95}, "label2")
 	.to(group2, 0.5, {alpha:0})
 	.to(group8, 1, {alpha:1})
-	
-	.to(roue1, 2, {x:w*0.23,rotation:-360},"label3")
-	.to(roue2, 2, {x:0.0189,rotation:-360},"label3")
-	.to(roue3, 2, {x:w*0.1,rotation:-360},"label3")
-	.to(cab2, 2, {x:w*0.202},"label3")
-	.to(truck2, 2, {x:w*0.002},"label3")
-	
-	.to(bandeB, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
-	.to(bandeH, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
-	.to(gypesL, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
-	
-	.to(roue1, 3, {x:w*0.23+(3*(w*0.23)), rotation:360},"label4")
-	.to(roue2, 3, {x:w*0.0189+(3*(w*0.23)), rotation:360},"label4")
-	.to(roue3, 3, {x:w*0.1+(3*(w*0.23)), rotation:360},"label4")
-	.to(cab2, 3, {x:w*0.202+(3*(w*0.23))},"label4")
-	.to(truck2, 3, {x:w*0.002+(3*(w*0.23))},"label4")
+	.to(ball0, 2, {x:300,rotation:-360},"label3")
+	.to(ball1, 2, {x:300,rotation:-360},"label3")
+	.to(ball2, 2, {x:300,rotation:-360},"label3")
+	.to(cab, 2, {x:w*0.29},"label3")
+	.to(truck, 2, {x:w*0},"label3")
+	.to(bandeB, 3, {x:w/1.7},"label4")
+	.to(bandeH, 3, {x:w/1.7},"label4")
+	.to(gypesL, 3, {x:w/1.7},"label4")
+	.to(ball0, 3, {x:w/1.7+w/3, rotation:360},"label4")
+	.to(ball1, 3, {x:w/1.7+w/3, rotation:360},"label4")
+	.to(ball2, 3, {x:w/1.7+w/3, rotation:360},"label4")
+	.to(cab, 3, {x:w/1.14},"label4")
+	.to(truck, 3, {x:w/1.7},"label4")*/
 	.eventCallback("onComplete", function(){
 		setTimeout(function(){
 			stage.removeAllChildren();
