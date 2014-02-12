@@ -210,9 +210,9 @@
 		that.init();
 
 		//animations
-		that.mainTl.to(that.$intro.find('h1:first'), 1, {letterSpacing:'0px',autoAlpha:1,scale:1, delay:0.9})
-		.to(that.$intro.find('h2:first'), 1, {autoAlpha:1, x:0, textAlign:"center"})
-		.to(that.$intro.find('img:first'), 1, {autoAlpha:1, y:0})
+		that.mainTl//.to(that.$intro.find('h1:first'), 1, {letterSpacing:'0px',autoAlpha:1,scale:1, delay:0.9})
+		//.to(that.$intro.find('h2:first'), 1, {autoAlpha:1, x:0, textAlign:"center"})
+		//.to(that.$intro.find('img:first'), 1, {autoAlpha:1, y:0})
 		.to(that.$intro, 0.4, {autoAlpha:0, display:'none', x:-that.$intro.width(), delay:2})
 		.to(that.$story, 1, {autoAlpha:1, display:'block', scale:1, onStart:function(){
 			$('.arrow').css('visibility', 'visible');

@@ -463,7 +463,7 @@ function(){
 	pipeC.graphics.endStroke();
 	
 	// Dessin gypes
-	var gypesC = new createjs.Bitmap("img/gypes.png");
+	/*var gypesC = new createjs.Bitmap("img/gypes.png");
 	gypesC.x = w*(0*(0.04));;
 	gypesC.y = h*0.451;
 	gypesC.scaleX = w*0.00022;
@@ -479,7 +479,7 @@ function(){
 	gypes3C.x = w*(2*(0.04));
 	gypes3C.y = h*0.451;
 	gypes3C.scaleX = w*0.00022;
-	gypes3C.scaleY = w*0.00022;
+	gypes3C.scaleY = w*0.00022;*/
 	
 	var gypes4C  = new createjs.Bitmap("img/gypes.png");
 	gypes4C.x = w*(3*(0.04));
@@ -497,38 +497,230 @@ function(){
 	gypesLC.graphics.beginFill("#727272").drawRoundRect(w*0.503, h*0.53, w*0.1, h*0.19, 2);
 	gypesLC.graphics.endFill();
 	
-	group3.addChild(tapisC, gypesC,gypes2C,gypes3C,gypes4C ,gypes5C, fourC, pipeC, gypesLC);
+	group3.addChild(tapisC/*, gypesC,gypes2C,gypes3C,*/,gypes4C ,gypes5C, fourC, pipeC, gypesLC);
 
 // -------- container 4 ------------------------------------------			
+	var group4 = new createjs.Container();
+	group4.alpha = 0;
+			
+	var rond = new createjs.Shape();
+	rond.graphics.setStrokeStyle(1, 'round', 'round');
+	rond.graphics.beginStroke(('#ccc'));
+	rond.graphics.beginFill("#ccc").drawCircle(0,0,100);
+	rond.graphics.endStroke();
+	rond.graphics.endFill();
+	rond.graphics.endStroke();
+	rond.graphics.setStrokeStyle(2, 'round', 'round');
+	rond.graphics.beginStroke(('#ff0000'));
+	rond.graphics.moveTo(20,0);
+	rond.graphics.lineTo(-20,0);
 
+	rond.graphics.moveTo(0,20);
+	rond.graphics.lineTo(0,-20);
+	rond.graphics.beginStroke(('#000000'));
+	rond.graphics.setStrokeStyle(1, 'round', 'round');
+	
+	rond.x = w*0.3;
+	rond.y = h*0.5;
+	
+	var rond1 = new createjs.Shape();
+	rond1.graphics.setStrokeStyle(1, 'round', 'round');
+	rond1.graphics.beginStroke(('#ccc'));
+	rond1.graphics.beginFill("#ccc000").drawCircle(0,0,100);
+	rond1.graphics.endStroke();
+	rond1.graphics.endFill();
+	rond1.graphics.endStroke();
+	rond1.graphics.setStrokeStyle(2, 'round', 'round');
+	rond1.graphics.beginStroke(('#ff0000'));
+	rond1.graphics.moveTo(20,0);
+	rond1.graphics.lineTo(-20,0);
+
+	rond1.graphics.moveTo(0,20);
+	rond1.graphics.lineTo(0,-20);
+	rond1.graphics.beginStroke(('#000000'));
+	rond1.graphics.setStrokeStyle(1, 'round', 'round');
+	
+	rond1.x = w*0.6;
+	rond1.y = h*0.5;
+	
+	stage.addChild(rond, rond1);
 // -------- container 5 ------------------------------------------
 	var group5 = new createjs.Container();
 	group5.alpha = 0;
 
-	var bandeB = new createjs.Shape();
-	bandeB.graphics.beginFill("#ccc").drawRoundRect(0,h*0.9,w*0.333, h*0.03, 2);
-	bandeB.graphics.endFill();
+	var bandeBE = new createjs.Shape();
+	bandeBE.graphics.beginFill("#ccc").drawRoundRect(0,h*0.9,w*0.333, h*0.03, 2);
+	bandeBE.graphics.endFill();
 
-	var bandeH = new createjs.Shape();
-	bandeH.graphics.beginFill("#ccc000").drawRoundRect(w*0.33,h*0.7,w*0.333, h*0.03, 2);
-	bandeH.graphics.endFill();
+	var bandeHE = new createjs.Shape();
+	bandeHE.graphics.beginFill("#ccc000").drawRoundRect(w*0.33,h*0.7,w*0.333, h*0.03, 2);
+	bandeHE.graphics.endFill();
 	
-	var gypesL = new createjs.Shape();
-	gypesL.graphics.beginFill("#727272").drawRoundRect(w*0.253, h*0.4, w*0.072, h*0.17, 2);
-	gypesL.graphics.endFill();
+	var gypesLE = new createjs.Shape();
+	gypesLE.graphics.beginFill("#727272").drawRoundRect(w*0.253, h*0.4, w*0.072, h*0.17, 2);
+	gypesLE.graphics.endFill();
 	
-	var pipe = new createjs.Shape();
-	pipe.graphics.setStrokeStyle(5, 'round', 'round');
-	pipe.graphics.beginStroke(('#000000'));
-	pipe.graphics.drawRoundRect(w*0.25,h*0.41, w*0.077, h*0.32, 2);
-	pipe.graphics.endFill();
-	pipe.graphics.endStroke();	
+	var pipeE = new createjs.Shape();
+	pipeE.graphics.setStrokeStyle(5, 'round', 'round');
+	pipeE.graphics.beginStroke(('#000000'));
+	pipeE.graphics.drawRoundRect(w*0.25,h*0.41, w*0.077, h*0.32, 2);
+	pipeE.graphics.endFill();
+	pipeE.graphics.endStroke();	
 	
-	group4.addChild(bandeB, bandeH, pipe, gypesL);
+	group5.addChild(bandeBE, bandeHE, pipeE, gypesLE);
 // -------- container 6 ------------------------------------------
+	var group6 = new createjs.Container();
+	group6.alpha = 0;
+	
+	var bandeBF = new createjs.Shape();
+	bandeBF.graphics.beginFill("#ccc").drawRoundRect(1,h*0.9,w*0.333, h*0.03, 2);
+	bandeBF.graphics.endFill();
 
+	var bandeHF = new createjs.Shape();
+	bandeHF.graphics.beginFill("#ccc000").drawRoundRect(1,h*0.7,w*0.333, h*0.03, 2);
+	bandeHF.graphics.endFill();
+
+	var gypesLF = new createjs.Shape();
+	gypesLF.graphics.beginFill("#727272").drawRoundRect(1,h*0.73,w*0.333, h*0.17, 2);
+	gypesLF.graphics.endFill();
+
+	var cuteF = new createjs.Shape();
+	cuteF.graphics.setStrokeStyle(5, 'round', 'round');
+	cuteF.graphics.beginStroke(('#000000'));
+	cuteF.graphics.drawRoundRect(w*0.4,h*0.3, 2, h*0.3, 1.5);
+	cuteF.graphics.endFill();
+	cuteF.graphics.endStroke();
+	/**********************************************************/
+	var bandeB2F = new createjs.Shape();
+	bandeB2F.graphics.beginFill("#ccc").drawRoundRect(1,h*0.9,w*0.126, h*0.03, 2);
+	bandeB2F.graphics.endFill();
+
+	var bandeH2F = new createjs.Shape();
+	bandeH2F.graphics.beginFill("#ccc000").drawRoundRect(1,h*0.7,w*0.126, h*0.03, 2);
+	bandeH2F.graphics.endFill();
+
+	var gypesL2F = new createjs.Shape();
+	gypesL2F.graphics.beginFill("#727272").drawRoundRect(1,h*0.73,w*0.126, h*0.17, 2);
+	gypesL2F.graphics.endFill();
+	/**************************************************************/
+	var fourF = new createjs.Shape();
+	fourF.graphics.setStrokeStyle(5, 'round', 'round');
+	fourF.graphics.beginStroke(('#000000'));
+	fourF.graphics.drawRoundRect(w*0.555, h*0.3, w*0.1431, h*0.67, 2);
+	fourF.graphics.endFill();
+	fourF.graphics.endStroke();
+
+	var feuF = new createjs.Shape();
+	feuF.graphics.setStrokeStyle(5, 'round', 'round');
+	feuF.graphics.beginStroke(('#000000'));
+	feuF.graphics.beginFill(('#ff0000')).drawRoundRect(w*0.5585, h+10, w*0.136, h*0.67, 2);
+	feuF.graphics.endFill();
+	feuF.graphics.endStroke();
+	/****/
+	group6.addChild(bandeBF, bandeHF, gypesLF, cuteF, bandeB2F, bandeH2F, gypesL2F, fourF, feuF );
 // -------- container 7 ------------------------------------------
+	var group7 = new createjs.Container();
+	group7.alpha = 0;
 
+	// Roue cab
+	var ball0G = new createjs.Shape();
+	ball0G.graphics.setStrokeStyle(5, 'round', 'round');
+	ball0G.graphics.beginStroke(('#000000'));
+	ball0G.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
+	ball0G.graphics.endStroke();
+	ball0G.graphics.endFill();
+	ball0G.graphics.setStrokeStyle(1, 'round', 'round');
+	ball0G.graphics.beginStroke(('#000000'));
+	ball0G.graphics.moveTo(w*0.016,0);
+	ball0G.graphics.lineTo(-w*0.016,0);
+
+	ball0G.graphics.moveTo(0,w*0.016);
+	ball0G.graphics.lineTo(0,-w*0.016);
+
+	ball0G.graphics.endStroke();
+	
+	ball0G.x = w*0.23+(3*(w*0.23));
+	ball0G.y = h*0.4973;
+
+	// Dessin de Roue truck 1	
+	var ball1G = new createjs.Shape();
+	ball1G.graphics.setStrokeStyle(5, 'round', 'round');
+	ball1G.graphics.beginStroke(('#000000'));
+	ball1G.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
+	ball1G.graphics.endStroke();
+	ball1G.graphics.endFill();
+	ball1G.graphics.setStrokeStyle(1, 'round', 'round');
+	ball1G.graphics.beginStroke(('#000000'));
+	ball1G.graphics.moveTo(w*0.016,0);
+	ball1G.graphics.lineTo(-w*0.016,0);
+
+	ball1G.graphics.moveTo(0,w*0.016);
+	ball1G.graphics.lineTo(0,-w*0.016);
+
+	ball1G.graphics.endStroke();
+	
+	ball1G.x = w*0.0189+(3*(w*0.23));
+	ball1G.y = h*0.4973;
+	
+	// Dessin de Roue truck 2	
+	var ball2G = new createjs.Shape();
+	ball2G.graphics.setStrokeStyle(5, 'round', 'round');
+	ball2G.graphics.beginStroke(('#000000'));
+	ball2G.graphics.beginFill("#ccc").drawCircle(0,0,w*0.016);
+	ball2G.graphics.endStroke();
+	ball2G.graphics.endFill();
+	
+	ball2G.graphics.setStrokeStyle(1, 'round', 'round');
+	ball2G.graphics.beginStroke(('#000000'));
+	ball2G.graphics.moveTo(w*0.016,0);
+	ball2G.graphics.lineTo(-w*0.016,0);
+
+	ball2G.graphics.moveTo(0,w*0.016);
+	ball2G.graphics.lineTo(0,-w*0.016);
+
+	ball2G.graphics.endStroke();
+	
+	ball2G.x = w*0.1+(3*(w*0.23));   
+	ball2G.y = h*0.4973;
+	
+	// Dessin cabine
+	var cabG = new createjs.Shape();
+	cabG.graphics.setStrokeStyle(3, 'round', 'round');
+	cabG.graphics.beginStroke('#000');
+	cabG.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,h*0.089,2);
+	cabG.graphics.endStroke();
+	cabG.graphics.endFill();
+	
+	cabG.x =  w*0.202+(3*(w*0.23));
+	cabG.y = h*0.38;
+	
+	// Dessin remorque
+	var truckG = new createjs.Shape();
+	truckG.graphics.setStrokeStyle(3, 'round', 'round');
+	truckG.graphics.beginStroke('#000');
+	truckG.graphics.beginFill('#fff').drawRoundRect(0,h*0.099,w*0.196,h*0.01,2);
+	truckG.graphics.endStroke();
+	truckG.graphics.endFill();
+	
+	truckG.x = w*0.002+(3*(w*0.23));
+	truckG.y = h*0.357;
+	
+	var bandeBG = new createjs.Shape();
+	bandeBG.graphics.beginFill("#ccc").drawRoundRect(w*0.002,h*0.441,w*0.1,h*0.01,2);
+	bandeBG.graphics.endFill();
+
+	var bandeHG = new createjs.Shape();
+	bandeHG.graphics.beginFill("#ccc000").drawRoundRect(w*0.002,h*0.34,w*0.1,h*0.01,2);
+	bandeHG.graphics.endFill();
+	
+	var gypesLG = new createjs.Shape();
+	gypesLG.graphics.beginFill("#727272").drawRoundRect(w*0.002,h*0.35,w*0.1,h*0.091,2);
+	gypesLG.graphics.endFill();
+	
+	
+	// Ajout au conteneur
+	
+	group7.addChild(ball0G,ball1G,ball2G,cabG,truckG, bandeBG,bandeHG,gypesLG);
 // -------- container 8 ------------------------------------------
 	var group8 = new createjs.Container();
 	group8.alpha = 0;
@@ -631,7 +823,7 @@ function(){
 
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
-    stage.addChild(veil,/* group1, group2,*/group3/*, group8*/);
+    stage.addChild(veil, group1, group2,group3,group4, group5,group6, group7, group8);
 	TweenMax.ticker.addEventListener("tick", stage.update, stage);
 	stage.update();
 //--------------------------------------------------------------------
@@ -640,7 +832,7 @@ function(){
 
 //-------Animation 1--------------------------------------------------
 	canvasTl.to(veil, 0.1, {alpha:0.98})
-	/*.to(group1, 1, {alpha:1, delay:1})
+	.to(group1, 1, {alpha:1, delay:1})
 	.to(ball0, 2, {rotation:360, x:w*0.23+(3*(w*0.23))}, "label1")
 	.to(ball1, 2, {rotation:360, x:w*0.0189+(3*(w*0.23))}, "label1")
 	.to(ball2, 2, {rotation:360, x:w*0.1+(3*(w*0.23))}, "label1")
@@ -656,7 +848,7 @@ function(){
 	.to(gypes5B, 3.1, {x:w*(4*(0.04))+(3.4*(w*0.23))}, "label2")
 	.to(group2, 0.5, {alpha:0})
 //-------Animation 3--------------------------------------------------
-	*/.to(group3, 1, {alpha:1})
+	.to(group3, 1, {alpha:1})
 	/*.to(gypesC, 1.4, {x:w*0.3}, "label10")
 	.to(gypesC, 0.14, {rotation:-39.9,x:w*0.317}, "label10")
 	.to(gypesC, 1.4, {x:w*0.482,y:h*0.331}, "label10")
@@ -694,34 +886,81 @@ function(){
 	.to(gypes5C, 0.1, {rotation:0.9,x:w*0.521}, "labelC17")
 	.to(gypes5C, 1, {y:h*0.5}, "label18")
 
-	//.to(gypesLC, 4, {x:w*0.8}, "label12")		
-	//.to(group3, 0.5, {alpha:0})
+	.to(gypesLC, 4, {delay:5,x:w*0.8}, "label12")	
+	.to(group3, 0.5, {alpha:0})
 	
 //-------Animation 4--------------------------------------------------
-
-//-------Animation 5--------------------------------------------------
-.to({scaleX:1.5}, 1220);
-.to({scaleX:3}, 2400);
-.to({y:h*0.33}, 500, createjs.Ease.none)
-.to({scaleX:3.1}, 2500, createjs.Ease.none);
-//-------Animation 6--------------------------------------------------
-//-------Animation 7--------------------------------------------------
-
-	/*.to(group8, 1, {alpha:1})
-	.to(roue1, 2, {x:w*0.23,rotation:-360},"label3")//to upgrade after !!!
-	.to(roue2, 2, {x:0.0189,rotation:-360},"label3")
-	.to(roue3, 2, {x:w*0.1,rotation:-360},"label3")
-	.to(cab2, 2, {x:w*0.202},"label3")
-	.to(truck2, 2, {x:w*0.002},"label3")
+	.to(group4, 1, {alpha:1})
+	.to(rond, 1, {rotation:360,scaleX:0.1, scaleY:0.1}, "labelD17")
+	.to(rond1, 1, {delay:1.1,rotation:360,scaleX:0.1, scaleY:0.1}, "labelD17")
+	.to(group4, 0.5, {alpha:0})
 	
-	.to(bandeB, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
-	.to(bandeH, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
-	.to(gypesL, 3, {x:w*0.0189+(3*(w*0.23))},"label4")	
-	.to(roue1, 3, {x:w*0.23+(3*(w*0.23)), rotation:360},"label4")
-	.to(roue2, 3, {x:w*0.0189+(3*(w*0.23)), rotation:360},"label4")
-	.to(roue3, 3, {x:w*0.1+(3*(w*0.23)), rotation:360},"label4")
-	.to(cab2, 3, {x:w*0.202+(3*(w*0.23))},"label4")
-	.to(truck2, 3, {x:w*0.002+(3*(w*0.23))},"label4")*/
+//-------Animation 5--------------------------------------------------
+	.to(group5, 1, {alpha:1})
+	.to(gypesLE,1,{y:h*0.33},"labelE1")
+	.to(bandeHE,1,{scaleX:1.5},"labelE2")
+	.to(bandeBE,1,{scaleX:3},"labelE2")
+	
+	.to(gypesLE,1,{scaleX:3.1},"labelE2")
+	.to(group5, 0.5, {alpha:0})
+	
+//-------Animation 6--------------------------------------------------
+	.to(group6, 1, {alpha:1})
+	.to(bandeHF,1,{scaleX:1.2},"labelF2")
+	.to(bandeBF,1,{scaleX:1.2},"labelF2")
+	.to(gypesLF,1,{scaleX:1.2},"labelF2")
+	/************************************/
+	.to(bandeH2F,1,{x:w*0.5651},"labelF3")
+	.to(bandeH2F,1,{delay:2,x:w*0.833},"labelF4")
+	/************************************/
+	.to(bandeB2F,1,{x:w*0.5651},"labelF3")
+	.to(bandeB2F,1,{delay:2,x:w*0.833},"labelF4")
+	/************************************/
+	.to(gypesL2F,1,{x:w*0.5651},"labelF3")
+	.to(gypesL2F,1,{delay:2,x:w*0.833},"labelF4")
+	/************************************/
+	.to(cuteF,1,{delay:0.01,y:h*0.33},"labelF3")
+	.to(cuteF,1,{y:-h*0},"labelF4")
+	/************************************/
+	.to(feuF,1,{delay:0.1,y:-h*0.73},"labelF3")
+	.to(feuF,1,{delay:1.8,y:h*0},"labelF4")
+	.to(group6, 0.5, {alpha:0})
+
+//-------Animation 7--------------------------------------------------
+	.to(group7, 1, {alpha:1})
+	.to(ball0G, 2, {x:w*0.23,rotation:-360},"label3")//to upgrade after !!!
+	.to(ball1G, 2, {x:0.0189,rotation:-360},"label3")
+	.to(ball2G, 2, {x:w*0.1,rotation:-360},"label3")
+	.to(cabG, 2, {x:w*0.202},"label3")
+	.to(truckG, 2, {x:w*0.002},"label3")
+	
+	.to(bandeBG, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
+	.to(bandeHG, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
+	.to(gypesLG, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
+	
+	.to(ball0G, 3, {x:w*0.23+(3*(w*0.23)), rotation:360},"label4")
+	.to(ball1G, 3, {x:w*0.0189+(3*(w*0.23)), rotation:360},"label4")
+	.to(ball2G, 3, {x:w*0.1+(3*(w*0.23)), rotation:360},"label4")
+	.to(cabG, 3, {x:w*0.202+(3*(w*0.23))},"label4")
+	.to(truckG, 3, {x:w*0.002+(3*(w*0.23))},"label4")
+	.to(group7, 0.5, {alpha:0})
+//-------Animation 8--------------------------------------------------
+
+	.to(group8, 1, {alpha:1})
+	.to(roue1, 2, {x:w*0.23,rotation:-360},"labelH3")//to upgrade after !!!
+	.to(roue2, 2, {x:0.0189,rotation:-360},"labelH3")
+	.to(roue3, 2, {x:w*0.1,rotation:-360},"labelH3")
+	.to(cab2, 2, {x:w*0.202},"labelH3")
+	.to(truck2, 2, {x:w*0.002},"labelH3")
+	
+	.to(bandeB, 3, {x:w*0.0189+(3*(w*0.23))},"labelH4")
+	.to(bandeH, 3, {x:w*0.0189+(3*(w*0.23))},"labelH4")
+	.to(gypesL, 3, {x:w*0.0189+(3*(w*0.23))},"labelH4")	
+	.to(roue1, 3, {x:w*0.23+(3*(w*0.23)), rotation:360},"labelH4")
+	.to(roue2, 3, {x:w*0.0189+(3*(w*0.23)), rotation:360},"labelH4")
+	.to(roue3, 3, {x:w*0.1+(3*(w*0.23)), rotation:360},"labelH4")
+	.to(cab2, 3, {x:w*0.202+(3*(w*0.23))},"labelH4")
+	.to(truck2, 3, {x:w*0.002+(3*(w*0.23))},"labelH4")
 	
 	.eventCallback("onComplete", function(){
 		setTimeout(function(){
