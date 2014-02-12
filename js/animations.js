@@ -499,10 +499,32 @@ function(){
 	
 	group3.addChild(tapisC, gypesC,gypes2C,gypes3C,gypes4C ,gypes5C, fourC, pipeC, gypesLC);
 
-// -------- container 4 ------------------------------------------
+// -------- container 4 ------------------------------------------			
 
 // -------- container 5 ------------------------------------------
+	var group5 = new createjs.Container();
+	group5.alpha = 0;
 
+	var bandeB = new createjs.Shape();
+	bandeB.graphics.beginFill("#ccc").drawRoundRect(0,h*0.9,w*0.333, h*0.03, 2);
+	bandeB.graphics.endFill();
+
+	var bandeH = new createjs.Shape();
+	bandeH.graphics.beginFill("#ccc000").drawRoundRect(w*0.33,h*0.7,w*0.333, h*0.03, 2);
+	bandeH.graphics.endFill();
+	
+	var gypesL = new createjs.Shape();
+	gypesL.graphics.beginFill("#727272").drawRoundRect(w*0.253, h*0.4, w*0.072, h*0.17, 2);
+	gypesL.graphics.endFill();
+	
+	var pipe = new createjs.Shape();
+	pipe.graphics.setStrokeStyle(5, 'round', 'round');
+	pipe.graphics.beginStroke(('#000000'));
+	pipe.graphics.drawRoundRect(w*0.25,h*0.41, w*0.077, h*0.32, 2);
+	pipe.graphics.endFill();
+	pipe.graphics.endStroke();	
+	
+	group4.addChild(bandeB, bandeH, pipe, gypesL);
 // -------- container 6 ------------------------------------------
 
 // -------- container 7 ------------------------------------------
@@ -667,16 +689,21 @@ function(){
 
 	
 	.to(gypes5C, 1, {x:w*0.3}, "labelC10")
-	.to(gypes5C,0.1, {rotation:-37.9,x:w*0.317}, "labelC11")
-	.to(gypes5C, 1, {x:w*0.49,y:h*0.25}, "label12")
-	.to(gypes5C, 0.1, {rotation:0.9,x:w*0.521}, "labelC13")
-	.to(gypes5C, 1, {y:h*0.5}, "label14")
+	.to(gypes5C,0.1, {rotation:-37.9,x:w*0.317}, "labelC15")
+	.to(gypes5C, 1, {x:w*0.49,y:h*0.25}, "label16")
+	.to(gypes5C, 0.1, {rotation:0.9,x:w*0.521}, "labelC17")
+	.to(gypes5C, 1, {y:h*0.5}, "label18")
 
 	//.to(gypesLC, 4, {x:w*0.8}, "label12")		
 	//.to(group3, 0.5, {alpha:0})
 	
 //-------Animation 4--------------------------------------------------
+
 //-------Animation 5--------------------------------------------------
+.to({scaleX:1.5}, 1220);
+.to({scaleX:3}, 2400);
+.to({y:h*0.33}, 500, createjs.Ease.none)
+.to({scaleX:3.1}, 2500, createjs.Ease.none);
 //-------Animation 6--------------------------------------------------
 //-------Animation 7--------------------------------------------------
 
