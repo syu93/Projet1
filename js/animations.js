@@ -366,11 +366,11 @@ function(){
 	ball2.y = h*0.4973;
 	
 	// Dessin cabine
-	var cab = new createjs.Shape();
+	var cabA = new createjs.Shape();
 	cabA.graphics.setStrokeStyle(3, 'round', 'round');
 	cabA.graphics.beginStroke('#00');
 	cabA.graphics.beginFill('#fff').drawRoundRect(0,0,w*0.064,h*0.089,2);
-	cab.graphics.endStroke();
+	cabA.graphics.endStroke();
 	cabA.graphics.endFill();
 	
 	cabA.x =  w*0.202;
@@ -419,8 +419,8 @@ function(){
 	
 	var gypes4B  = new createjs.Bitmap("img/gypes.png");
 	gypes4B.x = w*(3*(0.04));
-	gypes4BBB.y = h*0.451;
-	gypes4BB.scaleX = w*0.00022;
+	gypes4B.y = h*0.451;
+	gypes4B.scaleX = w*0.00022;
 	gypes4B.scaleY = w*0.00022;
 	
 	var gypes5B  = new createjs.Bitmap("img/gypes.png");
@@ -438,63 +438,63 @@ function(){
 	var tapisC = new createjs.Shape();
 	tapisC.graphics.setStrokeStyle(5, 'round', 'round');
 	tapisC.graphics.beginStroke(('#000000'));
-		tapisC.graphics.beginFill("#FF0000").drawRoundRect(0,h*0.9,w*0.333, h*0.03, 2);
+		tapisC.graphics.beginFill("#FF0000").drawRoundRect(0,h*0.50,w*0.333, h*0.01, 2);
 		tapisC.graphics.endFill();
 	tapisC.graphics.endStroke();
 	
 	tapisC.graphics.setStrokeStyle(10, 'round', 'round');
 	tapisC.graphics.beginStroke(('#000000'));
-		tapisC.graphics.moveTo(w*0.333,h*0.92);
-		tapisC.graphics.lineTo(w*0.5,h*0.5);
+		tapisC.graphics.moveTo(w*0.333,h*0.50);
+		tapisC.graphics.lineTo(w*0.5,h*0.3);
 	tapisC.graphics.endStroke();
 	
 	var fourC = new createjs.Shape();
 	fourC.graphics.setStrokeStyle(5, 'round', 'round');
 	fourC.graphics.beginStroke(('#000000'));
-	fourC.graphics.beginFill("#727272").drawRoundRect(w*0.5, h*0.66,w*0.124, h*0.33, 2);
+	fourC.graphics.beginFill("#727272").drawRoundRect(w*0.5,h*0.4,w*0.124, h*0.33, 2);
 	fourC.graphics.endFill();
 	fourC.graphics.endStroke();
 
 	var pipeC = new createjs.Shape();
 	pipeC.graphics.setStrokeStyle(5, 'round', 'round');
 	pipeC.graphics.beginStroke(('#000000'));
-	pipeC.graphics.drawRoundRect(w*0.624, h*0.7691, w*0.379, h*0.204, 2);
+	pipeC.graphics.drawRoundRect(w*0.624, h*0.52, w*0.379, h*0.204, 2);
 	pipeC.graphics.endFill();
 	pipeC.graphics.endStroke();
 	
 	// Dessin gypes
 	var gypesC = new createjs.Bitmap("img/gypes.png");
-	gypesC.x = 0;
-	gypesC.y = h*0.75;
-	gypesC.scaleX = w*0.0004;
-	gypesC.scaleY = h*0.001;
+	gypesC.x = w*(0*(0.04));;
+	gypesC.y = h*0.451;
+	gypesC.scaleX = w*0.00022;
+	gypesC.scaleY = w*0.00022;
 	
 	var gypes2C  = new createjs.Bitmap("img/gypes.png");
-	gypes2C.x = w*0.050;
-	gypes2C.y = h*0.75;
-	gypes2C.scaleX = w*0.0004;
-	gypes2C.scaleY = h*0.001;
+	gypes2C.x = w*(1*(0.04));
+	gypes2C.y = h*0.451;
+	gypes2C.scaleX = w*0.00022;
+	gypes2C.scaleY = w*0.00022;
 	
 	var gypes3C  = new createjs.Bitmap("img/gypes.png");
-	gypes3C.x = 2*w*0.050;
-	gypes3C.y = h*0.75;
-	gypes3C.scaleX = w*0.0004;
-	gypes3C.scaleY = h*0.001;
+	gypes3C.x = w*(2*(0.04));
+	gypes3C.y = h*0.451;
+	gypes3C.scaleX = w*0.00022;
+	gypes3C.scaleY = w*0.00022;
 	
 	var gypes4C  = new createjs.Bitmap("img/gypes.png");
-	gypes4C.x = 3*w*0.050;
-	gypes4C.y = h*0.75;
-	gypes4C.scaleX = w*0.0004;
-	gypes4C.scaleY = h*0.001;
+	gypes4C.x = w*(3*(0.04));
+	gypes4C.y = h*0.451;
+	gypes4C.scaleX = w*0.00022;
+	gypes4C.scaleY = w*0.00022;
 	
 	var gypes5C  = new createjs.Bitmap("img/gypes.png");
-	gypes5C.x = 4*w*0.050;
-	gypes5C.y = h*0.75;
-	gypes5C.scaleX = w*0.0004;
-	gypes5C.scaleY = h*0.001;		
+	gypes5C.x = w*(4*(0.04));
+	gypes5C.y = h*0.451;
+	gypes5C.scaleX = w*0.00022;
+	gypes5C.scaleY = w*0.00022;	
 	
 	var gypesLC = new createjs.Shape();
-	gypesLC.graphics.beginFill("#727272").drawRoundRect(w*0.503, h*0.776, w*0.1, h*0.19, 2);
+	gypesLC.graphics.beginFill("#727272").drawRoundRect(w*0.503, h*0.53, w*0.1, h*0.19, 2);
 	gypesLC.graphics.endFill();
 	
 	group3.addChild(tapisC, gypesC,gypes2C,gypes3C,gypes4C ,gypes5C, fourC, pipeC, gypesLC);
@@ -609,7 +609,7 @@ function(){
 
 // ---------------------------------------------------------------
 // ---------------------------------------------------------------
-    stage.addChild(veil, group1, group2, group8);
+    stage.addChild(veil,/* group1, group2,*/group3/*, group8*/);
 	TweenMax.ticker.addEventListener("tick", stage.update, stage);
 	stage.update();
 //--------------------------------------------------------------------
@@ -618,7 +618,7 @@ function(){
 
 //-------Animation 1--------------------------------------------------
 	canvasTl.to(veil, 0.1, {alpha:0.98})
-	.to(group1, 1, {alpha:1, delay:1})
+	/*.to(group1, 1, {alpha:1, delay:1})
 	.to(ball0, 2, {rotation:360, x:w*0.23+(3*(w*0.23))}, "label1")
 	.to(ball1, 2, {rotation:360, x:w*0.0189+(3*(w*0.23))}, "label1")
 	.to(ball2, 2, {rotation:360, x:w*0.1+(3*(w*0.23))}, "label1")
@@ -634,71 +634,59 @@ function(){
 	.to(gypes5B, 3.1, {x:w*(4*(0.04))+(3.4*(w*0.23))}, "label2")
 	.to(group2, 0.5, {alpha:0})
 //-------Animation 3--------------------------------------------------
-	.to(group3, 1, {alpha:1})
-		.to(group2, 1, {alpha:1})
-	.to(gypesB, 1.4, {x:w*0.3}, "label2")
-	.to(gypesB, 1.14, {rotation:-39.9,x:w*0.317}, "label2")
-	.to(gypesB, 1.4, {x:w*0.482,y:h*0.331}, "label2")
-	.to(gypesB, 1.4, {rotation:0.9,x:w*0.521}, "label2")
-	.to(gypesB, 1.4, {y:h*0.8}, "label2")
-/*******to finish**************/
-/*******to finish**************/
-/*******to finish**************/
-/*******to finish**************/
-	.to(gypes2C, 3.1, {x:w*(1*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes3C, 3.1, {x:w*(2*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes4C, 3.1, {x:w*(3*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(gypes5C, 3.1, {x:w*(4*(0.04))+(3.4*(w*0.23))}, "label2")
-	.to(group2, 0.5, {alpha:0})
+	*/.to(group3, 1, {alpha:1})
+	/*.to(gypesC, 1.4, {x:w*0.3}, "label10")
+	.to(gypesC, 0.14, {rotation:-39.9,x:w*0.317}, "label10")
+	.to(gypesC, 1.4, {x:w*0.482,y:h*0.331}, "label10")
+	.to(gypesC, 0.14, {rotation:0.9,x:w*0.521}, "label10")
+	.to(gypesC, 1.4, {y:h*0.8}, "label10")
+
+	.to(gypes2C, 1.14, {x:w*0.3}, "label10")
+	.to(gypes2C, 0.14, {rotation:-39.9,x:w*0.317}, "label10")
+	.to(gypes2C, 1.14, {x:w*0.482,y:h*0.331}, "label10")
+	.to(gypes2C, 0.14, {rotation:0.9,x:w*0.521}, "label10")
+	.to(gypes2C, 1.4, {y:h*0.8}, "label10")
+
+	.to(gypes3C, 0.94, {x:w*0.3}, "label10")
+	.to(gypes3C, 0.14, {rotation:-39.9,x:w*0.317}, "label10")
+	.to(gypes3C, 0.94, {x:w*0.482,y:h*0.331}, "label10")
+	.to(gypes3C, 0.14, {rotation:0.9,x:w*0.521}, "label10")
+	.to(gypes3C, 1.4, {y:h*0.8}, "label10")
 	
-var tween = createjs.Tween.get(gypes, {loop:false})
-.to({x:w*0.3}, 1400, createjs.Ease.none)
-.to({rotation:-39.9,x:w*0.317}, 140, createjs.Ease.none)
-.to({x:w*0.482,y:h*0.331}, 1400, createjs.Ease.none)
-.to({rotation:0.9,x:w*0.521}, 140,createjs.Ease.none)
-.to({y:h*0.8}, 1400, createjs.Ease.none);
+	.to(gypes4C, 0.74, {x:w*0.3}, "label10")
+	.to(gypes4C, 0.14, {rotation:-39.9,x:w*0.317}, "label10")
+	.to(gypes4C, 0.74, {x:w*0.482,y:h*0.331}, "label10")
+	.to(gypes4C, 0.14, {rotation:0.9,x:w*0.521}, "label10")
+	.to(gypes4C, 1.4, {y:h*0.8}, "label10")*/
 
-var tween = createjs.Tween.get(gypes2, {loop:false})
-.to({x:w*0.3}, 1140, createjs.Ease.none)
-.to({rotation:-39.9,x:w*0.317}, 140,createjs.Ease.none)
-.to({x:w*0.482,y:h*0.331}, 1140, createjs.Ease.none)
-.to({rotation:0.9,x:w*0.521}, 140,createjs.Ease.none)
-.to({y:h*0.8}, 1400, createjs.Ease.none);
+	.to(gypes4C, 1, {x:w*0.3}, "labelC10")
+	.to(gypes4C,0.1, {rotation:-37.9,x:w*0.317}, "labelC11")
+	.to(gypes4C, 1, {x:w*0.49,y:h*0.25}, "label12")
+	.to(gypes4C, 0.1, {rotation:0.9,x:w*0.521}, "labelC13")
+	.to(gypes4C, 1, {y:h*0.5}, "label14")
 
-var tween = createjs.Tween.get(gypes3, {loop:false})
-.to({x:w*0.3}, 940, createjs.Ease.none)
-.to({rotation:-39.9,x:w*0.317}, 140,createjs.Ease.none)
-.to({x:w*0.482,y:h*0.331}, 940, createjs.Ease.none)
-.to({rotation:0.9,x:w*0.521}, 140,createjs.Ease.none)
-.to({y:h*0.8}, 1400, createjs.Ease.none);
-
-var tween = createjs.Tween.get(gypes4, {loop:false})
-.to({x:w*0.3}, 740, createjs.Ease.none)
-.to({rotation:-39.9,x:w*0.317}, 140,createjs.Ease.none)
-.to({x:w*0.482,y:h*0.331}, 740, createjs.Ease.none)
-.to({rotation:0.9,x:w*0.521}, 140,createjs.Ease.none)
-.to({y:h*0.8}, 1400, createjs.Ease.none);
-
-var tween = createjs.Tween.get(gypes5, {loop:false})
-.to({x:w*0.3}, 540, createjs.Ease.none)
-.to({rotation:-39.9,x:w*0.317}, 140,createjs.Ease.none)
-.to({x:w*0.482,y:h*0.331}, 540, createjs.Ease.none)
-.to({rotation:0.9,x:w*0.521}, 140,createjs.Ease.none)
-.to({y:h*0.8}, 1400, createjs.Ease.none);
 	
-//-------Animation 1--------------------------------------------------
-//-------Animation 1--------------------------------------------------
-//-------Animation 1--------------------------------------------------
-//-------Animation 1--------------------------------------------------
-//-------Animation 1--------------------------------------------------
-//-------Animation 1--------------------------------------------------
-//-------Animation 1--------------------------------------------------
-	.to(group8, 1, {alpha:1})
+	.to(gypes5C, 1, {x:w*0.3}, "labelC10")
+	.to(gypes5C,0.1, {rotation:-37.9,x:w*0.317}, "labelC11")
+	.to(gypes5C, 1, {x:w*0.49,y:h*0.25}, "label12")
+	.to(gypes5C, 0.1, {rotation:0.9,x:w*0.521}, "labelC13")
+	.to(gypes5C, 1, {y:h*0.5}, "label14")
+
+	//.to(gypesLC, 4, {x:w*0.8}, "label12")		
+	//.to(group3, 0.5, {alpha:0})
+	
+//-------Animation 4--------------------------------------------------
+//-------Animation 5--------------------------------------------------
+//-------Animation 6--------------------------------------------------
+//-------Animation 7--------------------------------------------------
+
+	/*.to(group8, 1, {alpha:1})
 	.to(roue1, 2, {x:w*0.23,rotation:-360},"label3")//to upgrade after !!!
 	.to(roue2, 2, {x:0.0189,rotation:-360},"label3")
 	.to(roue3, 2, {x:w*0.1,rotation:-360},"label3")
 	.to(cab2, 2, {x:w*0.202},"label3")
-	.to(truck2, 2, {x:w*0.002},"label3")	
+	.to(truck2, 2, {x:w*0.002},"label3")
+	
 	.to(bandeB, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
 	.to(bandeH, 3, {x:w*0.0189+(3*(w*0.23))},"label4")
 	.to(gypesL, 3, {x:w*0.0189+(3*(w*0.23))},"label4")	
@@ -706,7 +694,7 @@ var tween = createjs.Tween.get(gypes5, {loop:false})
 	.to(roue2, 3, {x:w*0.0189+(3*(w*0.23)), rotation:360},"label4")
 	.to(roue3, 3, {x:w*0.1+(3*(w*0.23)), rotation:360},"label4")
 	.to(cab2, 3, {x:w*0.202+(3*(w*0.23))},"label4")
-	.to(truck2, 3, {x:w*0.002+(3*(w*0.23))},"label4")
+	.to(truck2, 3, {x:w*0.002+(3*(w*0.23))},"label4")*/
 	
 	.eventCallback("onComplete", function(){
 		setTimeout(function(){
